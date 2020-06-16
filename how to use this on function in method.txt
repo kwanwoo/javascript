@@ -1,0 +1,15 @@
+var jane = {
+
+name : 'jane',
+friends : ['cheeta','mark','kane'],
+
+sayhi : function(){
+
+this.friends.forEach(function(friend){
+
+console.log(this.name + 'says hi to' + friend)
+
+},this)
+}
+
+}
